@@ -1,0 +1,21 @@
+# Tarea: Estructura Inicial del Sitio Web
+
+- [x] Análisis y Configuración Inicial
+    - [x] Explorar carpeta 'Monitores' para referencias de diseño <!-- id: 0 -->
+    - [x] Crear plan de implementación <!-- id: 1 -->
+- [x] Creación de Estructura HTML
+    - [x] index.html (Inicio) <!-- id: 2 -->
+    - [x] validacion_garantia.html <!-- id: 3 -->
+    - [x] productos.html <!-- id: 4 -->
+    - [x] nosotros.html <!-- id: 5 -->
+    - [x] contacto.html <!-- id: 6 -->
+- [x] Estilizado Básico (CSS)
+    - [x] Crear style.css con variables de color y reseteo <!-- id: 7 -->
+    - [x] Estilar Header, Nav, Main, Footer <!-- id: 8 -->
+    - [x] Insertar logo GREEKYA en index.html y ajustar estilos <!-- id: 10 -->
+    - [x] Insertar logo GREEKYA en index.html y ajustar estilos <!-- id: 10 -->
+    - [x] Ajustar layout para encabezado fijo <!-- id: 11 -->
+- [x] Verificación
+    - [x] Revisar enlaces y estructura semántica <!-- id: 9 -->
+- [ ] Documentación
+    - [ ] Exportar archivos .md al directorio del proyecto para GitHub <!-- id: 12 -->
