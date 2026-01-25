@@ -1,0 +1,126 @@
+/* Variables de color y fuentes */
+:root {
+    --primary-color: #2c3e50;
+    /* Azul oscuro elegante */
+    --secondary-color: #34495e;
+    /* Azul grisáceo */
+    --accent-color: #e74c3c;
+    /* Rojo para llamadas a la acción */
+    --background-color: #f4f4f9;
+    /* Fondo claro */
+    --text-color: #333;
+    /* Texto oscuro */
+    --white: #fff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Espacio entre el texto y la imagen */
+}
+
+.logo img {
+    height: 75px;
+    /* Ajustar altura para que no sea muy grande */
+    width: auto;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Cuerpo principal */
+main {
+    flex: 1;
+    /* Ocupa el espacio restante */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 110px auto 0;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
