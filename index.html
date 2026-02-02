@@ -5,9 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" type="imagen/logo_gre.png" href="imagen/logo_gre.png">
+    <link rel="icon" type="image/png" href="imagen/logo_gre.png">
 
     <title>Inicio - Monitores Gaming GREEKYA</title>
+
+    <!-- Google Fonts: Poppins (Titulos) y Roboto (Cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,37 +27,37 @@
     <header>
         <div class="logo">
             <img src="imagen/logo.png" alt="GREEKYA Logo">
-            <h1> </h1>
-
+            <h1>GREEKYA</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="validacion_garantia.html">Garantía</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="validacion_garantia.html">Garantía</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Bienvenido a Nuestro Sitio</h2>
-            <p>Aqui podras conocer mas acerca de nuestros productos. Aquí encontrarás la mejor selección de monitores de
-                alta calidad para todas tus necesidades, ya sea para gaming, diseño gráfico o uso de oficina.</p>
-            <p>Explora nuestras secciones para conocer más sobre nuestros productos y servicios.</p>
-            <br>
-            <!-- Ejemplo de imagen referencial -->
-            <!-- <img src="imagen/fondo_inicio.png" alt="Portada" style="max-width: 100%; height: auto; border-radius: 8px;"> -->
+        <section class="hero">
+            <h2>Bienvenido a GREEKYA Gaming</h2>
+            <p>La mejor selección de monitores de alta calidad. Desde tasas de refresco extremas para eSports hasta
+                precisión de color para diseño gráfico.</p>
+            <a href="productos.html" class="btn btn-accent">Ver Productos</a>
         </section>
 
         <section>
-            <h2>Destacados</h2>
+            <h2>¿Por qué elegirnos?</h2>
             <ul>
-                <li>Amplia variedad de marcas y modelos.</li>
-                <li>Garantía extendida y soporte técnico.</li>
-                <li>Envíos a todo el país.</li>
+                <li><i class="fa-solid fa-check" style="color: var(--accent-color);"></i> Amplia variedad de marcas
+                    líderes.</li>
+                <li><i class="fa-solid fa-check" style="color: var(--accent-color);"></i> Precios competitivos y ofertas
+                    exclusivas.</li>
+                <li><i class="fa-solid fa-check" style="color: var(--accent-color);"></i> Asesoramiento personalizado
+                    por gamers para gamers.</li>
             </ul>
         </section>
     </main>
@@ -54,6 +65,11 @@
     <footer>
         <p>&copy; 2026 Monitores Gaming GREEKYA. Todos los derechos reservados.</p>
         <p>Contacto: digitalaccess@diacia.com | Tel: +593 999791752</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
     </footer>
 
 </body>

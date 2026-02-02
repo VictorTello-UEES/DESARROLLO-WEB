@@ -4,8 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="imagen/logo_gre.png" href="imagen/logo_gre.png">
+    <link rel="icon" type="image/png" href="imagen/logo_gre.png">
     <title>Productos - Monitores Gaming GREEKYA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,14 +25,15 @@
     <header>
         <div class="logo">
             <img src="imagen/logo.png" alt="GREEKYA Logo">
-            <h1></h1>
+            <h1>GREEKYA</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="validacion_garantia.html">Garantía</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="validacion_garantia.html">Garantía</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -33,66 +45,58 @@
             <p>Descubre nuestra gama de monitores diseñados para brindarte la mejor experiencia visual.</p>
         </section>
 
-        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <!-- Sección de Productos con Grid -->
+        <section class="grid-container">
             <!-- Producto 1 -->
-            <article style="border: 1px solid #ddd; padding: 1rem; text-align: center;">
+            <article class="producto-card">
+                <img src="imagen/pro_01.png" alt="Monitor Gaming X1">
                 <h3>Monitor Gaming X1</h3>
-                <p>27 pulgadas, 144Hz, 1ms</p>
-                <img src="imagen/pro_01.png" alt="Monitor X1" style="max-width: 100%; height: auto;">
-                <button
-                    style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--secondary-color); color: white; border: none;">Ver
-                    Detalles</button>
+                <p>27 pulgadas, 144Hz, 1ms. Ideal para eSports.</p>
+                <a href="index.html" class="btn btn-primary">Ver Detalles</a>
             </article>
 
-
             <!-- Producto 2 -->
-            <article style="border: 1px solid #ddd; padding: 1rem; text-align: center;">
+            <article class="producto-card">
+                <img src="imagen/pro_02.png" alt="Monitor Diseño Pro">
                 <h3>Monitor Diseño Pro</h3>
-                <p>32 pulgadas, 4K, IPS</p>
-                <img src="imagen/pro_02.png" alt="Monitor X1" style="max-width: 100%; height: auto;">
-                <button
-                    style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--secondary-color); color: white; border: none;">Ver
-                    Detalles</button>
+                <p>32 pulgadas, 4K, IPS. Colores Calibrados.</p>
+                <a href="index.html" class="btn btn-primary">Ver Detalles</a>
             </article>
 
             <!-- Producto 3 -->
-            <article style="border: 1px solid #ddd; padding: 1rem; text-align: center;">
+            <article class="producto-card">
+                <img src="imagen/pro_03.png" alt="Monitor Office Basic">
                 <h3>Monitor Office Basic</h3>
-                <p>24 pulgadas, Full HD</p>
-                <img src="imagen/pro_03.png" alt="Monitor X1" style="max-width: 100%; height: auto;">
-                <button
-                    style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--secondary-color); color: white; border: none;">Ver
-                    Detalles</button>
+                <p>24 pulgadas, Full HD. Comfort View.</p>
+                <a href="index.html" class="btn btn-primary">Ver Detalles</a>
             </article>
 
             <!-- Producto 4 -->
-            <article style="border: 1px solid #ddd; padding: 1rem; text-align: center;">
-                <h3>Monitor Office Basic</h3>
-                <p>24 pulgadas, Full HD</p>
-                <img src="imagen/pro_04.jpg" alt="Monitor X1" style="max-width: 100%; height: auto;">
-                <button
-                    style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--secondary-color); color: white; border: none;">Ver
-                    Detalles</button>
+            <article class="producto-card">
+                <img src="imagen/pro_04.jpg" alt="Monitor UltraWide">
+                <h3>Monitor UltraWide</h3>
+                <p>34 pulgadas, Curvo, WQHD. Inmersión total.</p>
+                <a href="index.html" class="btn btn-primary">Ver Detalles</a>
             </article>
 
             <!-- Producto 5 -->
-            <article style="border: 1px solid #ddd; padding: 1rem; text-align: center;">
-                <h3>Monitor Diseño Pro</h3>
-                <p>32 pulgadas, 4K, IPS</p>
-                <img src="imagen/pro_05.jpg" alt=" Monitor X1" style="max-width: 100%; height: auto;">
-                <button
-                    style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--secondary-color); color: white; border: none;">Ver
-                    Detalles</button>
+            <article class="producto-card">
+                <img src="imagen/pro_05.jpg" alt="Monitor 4K HDR">
+                <h3>Monitor 4K HDR</h3>
+                <p>28 pulgadas, HDR10, FreeSync.</p>
+                <a href="index.html" class="btn btn-primary">Ver Detalles</a>
             </article>
-
-
-
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Monitores Gaming GREEKYA. Todos los derechos reservados.</p>
         <p>Contacto: digitalaccess@diacia.com | Tel: +593 999791752</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
     </footer>
 
 </body>
