@@ -1,0 +1,119 @@
+/* --- CATEGORY NAVIGATION --- */
+.category-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.category-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* Portrait aspect ratio like example */
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--glass-border);
+}
+
+.category-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(0, 242, 255, 0.3);
+    border-color: var(--primary);
+}
+
+.category-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.category-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 40%, #000 100%);
+}
+
+.category-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.category-card:hover .category-bg img {
+    transform: scale(1.1);
+}
+
+.category-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, var(--primary) 0%, rgba(0, 242, 255, 0.8) 100%);
+    /* Blue gradient similar to example */
+    padding: 20px;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.3s;
+    height: 100px;
+    /* Fixed height for the bar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card:hover .category-content {
+    background: linear-gradient(to top, var(--accent) 0%, #ff0055 100%);
+    /* Red on hover like example? Or stick to brand colors? Example had red. I'll use accent/danger. */
+}
+
+/* User asked for something similar to the example which had Red "Serie Crixus". 
+   I will use the Primary Blue by default and maybe switch to Accent (Pink/Red) on hover for interaction feedback.
+*/
+
+.category-content h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.view-btn {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+    .category-nav-container {
+        gap: 20px;
+    }
+
+    .category-card {
+        width: 45%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-card {
+        width: 100%;
+        /* Full width cards on mobile? Or keep small grid? */
+        max-width: 320px;
+        height: 300px;
+    }
+}
